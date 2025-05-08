@@ -30,12 +30,12 @@ export const Tienda = () => {
       </section>
 
       {/* Filtro + Orden */}
-      <section className="flex justify-between items-center px-6 py-6 border-b">
+      <section className="flex justify-between items-center px-6 py-6 border-b text-center">
         <button className="flex items-center space-x-2 border px-3 py-2 rounded">
           <span><ListFilter /></span>
           <span>Filtrar</span>
         </button>
-        <span>
+        <span className="hidden md:block">
           { productos.reduce( (acc) => acc + 1, 0 ) } artículos
         </span>
         <select className="border px-3 py-2 rounded">

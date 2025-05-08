@@ -2,7 +2,7 @@ const team = [
   {
     name: "Lic. Raquel Ruiz",
     role: "Psicóloga – Fundadora",
-    image: "/images/fundadora.jpg",
+    image: "https://azlmyzhfvhsvsbdxarvt.supabase.co/storage/v1/object/public/productos.img//mama-web.jpg",
     bio: "Mi compromiso es ofrecer un espacio seguro, humano y respetuoso, donde cada historia pueda ser reconocida y trabajada con cuidado.",
     values: ["Empatía", "Respeto", "Escucha activa", "Acompañamiento personalizado"],
   },

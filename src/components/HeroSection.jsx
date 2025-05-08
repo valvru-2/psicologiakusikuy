@@ -51,27 +51,6 @@ export const HeroSection = () => {
           </div>
         </div>
       </section>
-        {/* <section className="px-6 md:px-16 py-20 text-center bg-[#F4E3CF]">
-          <h1 className="font-serif text-4xl md:text-5xl text-[#003c58] mb-4">
-            Un espacio de escucha, contención y transformación
-          </h1>
-          <p className="font-sans text-lg md:text-xl text-[#3f3f3f] max-w-3xl mx-auto mb-6">
-            Centro terapéutico integral. Acompañamos desde la comprensión, con psicoterapia profesional y herramientas que ayudan a sanar.
-          </p>
-          <div className="flex justify-center gap-4 mt-6">
-            <a 
-              href="#agenda"
-              className="bg-[#6CA6A0] text-white font-medium px-6 py-2 rounded-xl shadow hover:bg-[#5e9c97] transition"
-              onClick={ handleAgendar }
-            >
-              Agendar cita
-            </a>
-            <button className="bg-white text-[#6CA6A0] border border-[#6CA6A0] font-medium px-6 py-2 rounded-xl hover:bg-[#f5fdfc] transition">
-              Conocer más
-            </button>
-          </div>
-        </section> */}
-
         {/* SERVICIOS */}
         <section className="px-6 md:px-16 py-20 bg-white">
           <h2 className="font-serif text-3xl md:text-4xl text-[#003c58] text-center mb-10">

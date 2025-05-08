@@ -15,7 +15,7 @@ export const Aromaterapia = () => {
     const fetchProductos = async() => {
       
       
-      const { data, error } = await supabase.from('productos').select('*');
+      const { data, error } = await supabase.from('productos').select('*').limit(3);
   
       
     

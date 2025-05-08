@@ -43,11 +43,6 @@ export const Testimonios = () => {
                 “{t.quote}”
               </p>
               <div className="flex items-center space-x-3">
-                <img
-                  src={t.image}
-                  alt={t.name}
-                  className="w-12 h-12 rounded-full object-cover"
-                />
                 <span className="text-[#1E293B]/70 text-sm font-medium">
                   {t.name}, {t.edad}
                 </span>

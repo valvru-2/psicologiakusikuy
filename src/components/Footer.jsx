@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="grid md:grid-cols-3 gap-10">
         {/* Info general */}
         <div>
-          <h2 className="font-serif text-xl text-[#003c58] mb-2">Centro Terapeutico</h2>
+          <h2 className="font-serif text-xl text-[#003c58] mb-2">Centro Terapeutico <br/> Kusikuy Yachay</h2>
           <p className="font-sans text-sm text-gray-700">
             Psicoterapia profesional y acompañamiento emocional desde el respeto y la empatía.
           </p>
@@ -17,11 +17,16 @@ export const Footer = () => {
         <div>
           <h3 className="font-serif text-lg mb-2">Enlaces</h3>
           <ul className="space-y-1 text-sm font-sans">
-            <li><a href="#psicoterapia" className="hover:text-[#6CA6A0]">Psicoterapia</a></li>
-            <li><a href="#peritajes" className="hover:text-[#6CA6A0]">Peritajes</a></li>
-            <li><a href="#charlas" className="hover:text-[#6CA6A0]">Charlas</a></li>
-            <li><a href="#aromaterapia" className="hover:text-[#6CA6A0]">Aromaterapia</a></li>
-            <li><a href="#contacto" className="hover:text-[#6CA6A0]">Contacto</a></li>
+            {[
+              { nombre: 'Psicoterapia', path: '/psicoterapia' },
+              { nombre: 'Informes psicológicos', path: '/psicoterapia' },
+              { nombre: 'Charlas', path: '/institucional' },
+              { nombre: 'Aromaterapia', path: '/aromaterapia' },
+              { nombre: 'Contacto', path: '/contacto' }
+            ]
+            .map( i => {
+              return (<li key={`footer-${i.nombre}`}><a href={i.path} className="hover:text-[#6CA6A0]">{i.nombre}</a></li>)              
+            } )}
           </ul>
         </div>
 

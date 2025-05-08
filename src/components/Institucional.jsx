@@ -53,9 +53,14 @@ export const CharlasInstitucionales = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-[#6CA6A0] hover:bg-[#55847F] text-white rounded-xl px-6 py-3 text-base font-medium">
+          <a
+            href={`https://wa.me/5491155645181?text=${encodeURIComponent("Hola, quiero más información sobre las charlas")}`} 
+            className="bg-[#6CA6A0] hover:bg-[#55847F] text-white rounded-xl px-6 py-3 text-base font-medium"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Solicitar propuesta
-          </button>
+          </a>
         </div>
       </div>
     </section>

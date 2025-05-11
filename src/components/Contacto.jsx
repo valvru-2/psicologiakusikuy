@@ -20,7 +20,7 @@ export const Contacto = () => {
 
     try {
       
-      const res = await fetch('/api/contacto',{
+      const res = await fetch('https://psicologiakusikuy-backend.onrender.com/api/contacto',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

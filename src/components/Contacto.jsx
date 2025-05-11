@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import {  useState } from "react"
 
 
 export const Contacto = () => {
@@ -15,6 +15,28 @@ export const Contacto = () => {
     })
   }
 
+  const handleSubmit = async(e) => {
+    e.preventDefault()
+
+    try {
+      
+      const res = await fetch('/api/contacto',{
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formState)
+      })
+
+      const data = await res.json();
+      alert(data.message)
+
+    } catch (err) {
+      alert('Hubo un error en el formulario')
+      console.error(err)
+    }
+  }
+
 
 
     return (
@@ -27,7 +49,9 @@ export const Contacto = () => {
               Estamos para escucharte. Podés escribirnos para agendar una cita o consultar cualquier duda.
             </p>
 
-            <form className="space-y-4">
+            <form
+              onSubmit={ handleSubmit } 
+              className="space-y-4">
               <div>
                 <label className="block text-sm text-gray-700">Nombre completo</label>
                 <input
@@ -57,8 +81,7 @@ export const Contacto = () => {
               </div>
               <button
                 
-                onClick={ (event) => {
-                  event.preventDefault()
+                onClick={ () => {
                   console.log(formState)
                 } }
                 type="submit"
@@ -70,7 +93,7 @@ export const Contacto = () => {
 
             <div className="mt-6">
               <a
-                href="https://wa.me/51987654321"
+                href="https://wa.me/51952908498"
                 target="_blank"
                 className="inline-block mt-2 text-[#6CA6A0] font-medium underline"
               >
@@ -95,5 +118,4 @@ export const Contacto = () => {
         </div>
       </section>
     );
-  }
-  
+  }  

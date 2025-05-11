@@ -6,18 +6,18 @@ const team = [
     bio: "Mi compromiso es ofrecer un espacio seguro, humano y respetuoso, donde cada historia pueda ser reconocida y trabajada con cuidado.",
     values: ["Empatía", "Respeto", "Escucha activa", "Acompañamiento personalizado"],
   },
-  {
-    name: "Marina Torres",
-    role: "Terapeuta ocupacional",
-    image: "/images/marina.jpg",
-    specialty: "Estimulación cognitiva y acompañamiento en la vida cotidiana",
-  },
-  {
-    name: "Tomás Herrera",
-    role: "Especialista en aromaterapia",
-    image: "/images/tomas.jpg",
-    specialty: "Aplicación de esencias naturales en procesos de relajación y concentración",
-  },
+  // {
+  //   name: "Marina Torres",
+  //   role: "Terapeuta ocupacional",
+  //   image: "/images/marina.jpg",
+  //   specialty: "Estimulación cognitiva y acompañamiento en la vida cotidiana",
+  // },
+  // {
+  //   name: "Tomás Herrera",
+  //   role: "Especialista en aromaterapia",
+  //   image: "/images/tomas.jpg",
+  //   specialty: "Aplicación de esencias naturales en procesos de relajación y concentración",
+  // },
 ];
 
 export const Profesionales = () => {
@@ -29,7 +29,9 @@ export const Profesionales = () => {
             Un equipo al servicio del bienestar emocional
           </h2>
           <p className="text-[#1E293B] max-w-2xl mx-auto">
-            Creamos un espacio donde cada persona es escuchada desde su unicidad, con respeto y compromiso.
+            {/* Creamos un espacio donde cada persona es escuchada desde su unicidad, con respeto y compromiso. */}
+            Estamos aquí para ayudarte. <br /><br />
+A veces enfrentamos dificultades como ansiedad, baja autoestima, estrés, miedos, depresión o problemas de pareja que afectan nuestro bienestar. Nuestro objetivo es acompañarte y darte las herramientas necesarias para que puedas superarlos, recuperar el equilibrio y mejorar tu calidad de vida.
           </p>
         </div>
 

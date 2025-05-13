@@ -2,7 +2,7 @@ import { Mic } from "lucide-react";
 
 export const CharlasInstitucionales = () => {
   return (
-    <section className="bg-[#FAFAFA] py-16 px-8 mt-14">
+    <section className="bg-[#FAFAFA] py-16 px-8 mt-16">
       <div className="max-w-5xl mx-auto space-y-10">
         <div className="flex items-center gap-4">
           <Mic className="w-10 h-10 text-[#6CA6A0]" />
@@ -54,7 +54,7 @@ export const CharlasInstitucionales = () => {
 
         <div className="text-center mt-12">
           <a
-            href={`https://wa.me/5491155645181?text=${encodeURIComponent("Hola, quiero más información sobre las charlas")}`} 
+            href={`https://wa.me/51952908498?text=${encodeURIComponent("Hola, quiero más información sobre las charlas")}`} 
             className="bg-[#6CA6A0] hover:bg-[#55847F] text-white rounded-xl px-6 py-3 text-base font-medium"
             target="_blank"
             rel="noopener noreferrer"

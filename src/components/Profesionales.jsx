@@ -22,7 +22,7 @@ const team = [
 
 export const Profesionales = () => {
   return (
-    <section className="bg-[#FAFAFA] py-16 px-8 mt-14">
+    <section className="bg-[#FAFAFA] py-16 px-8 mt-16">
       <div className="max-w-6xl mx-auto space-y-12">
         <div className="text-center">
           <h2 className="text-4xl font-serif text-[#1E293B] mb-4">

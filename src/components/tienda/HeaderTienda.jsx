@@ -35,7 +35,7 @@ export const HeaderTienda = () => {
         {/* Navbar */}
         <header className="flex justify-between items-center px-6 py-4 shadow-md">
             <Link to='/tienda'>
-              <h1 className="text-xl font-semibold tracking-tight">Tienda Aromática</h1>
+              <h1 className="text-xl font-semibold tracking-tight">AuraSana</h1>
             </Link>
             <nav className="space-x-6 hidden md:flex">
             <a href="#" className="hover:text-[#6CA6A0]">Aromaterapia</a>

@@ -3,7 +3,7 @@ import { handleAgendar } from "../utils/handleCalendar";
 
 export const Psicoterapia = () => {
   return (
-    <section className="bg-[#FAFAFA] py-16 px-8 mt-14">
+    <section className="bg-[#FAFAFA] py-16 px-8 mt-16">
       <div className="max-w-5xl mx-auto space-y-10">
         <div className="flex items-center gap-4">
           <Brain className="w-10 h-10 text-[#6CA6A0]" />
@@ -26,6 +26,7 @@ export const Psicoterapia = () => {
           <div className="bg-white rounded-xl shadow-md p-6 space-y-3">
             <h3 className="text-xl font-serif text-[#1E293B]">Público</h3>
             <ul className="list-disc list-inside text-[#1E293B]">
+              <li>Niños</li>
               <li>Adolescentes</li>
               <li>Adultos</li>
               <li>Parejas</li>
@@ -48,7 +49,6 @@ export const Psicoterapia = () => {
               <li>Duración: 50 minutos por sesión</li>
               <li>Frecuencia sugerida: semanal</li>
               <li>Honorarios accesibles con posibilidad de ajustes</li>
-              <li>Se entrega comprobante (monotributo)</li>
             </ul>
           </div>
         </div>

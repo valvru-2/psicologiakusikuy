@@ -24,7 +24,7 @@ const testimonials = [
 
 export const Testimonios = () => {
   return (
-    <section className="bg-[#F4E3CF] py-16 px-8 mt-14">
+    <section className="bg-[#F4E3CF] py-16 px-8 mt-16">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-4xl font-serif mb-4 text-[#1E293B]">
           Lo que dicen quienes nos eligen

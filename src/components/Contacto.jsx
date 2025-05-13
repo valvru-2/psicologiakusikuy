@@ -1,9 +1,11 @@
 import {  useState } from "react"
+import { useNavigate } from "react-router";
 
 
 export const Contacto = () => {
 
   const [formState, setFormState] = useState({})
+  const navigate = useNavigate();
 
   const onChangeInput = ({target}) => {
 
@@ -20,7 +22,8 @@ export const Contacto = () => {
 
     try {
       
-      const res = await fetch('https://psicologiakusikuy-backend.onrender.com/api/contacto',{
+      const res = await fetch('http://localhost:3000/api/contacto',{
+      // const res = await fetch('https://psicologiakusikuy-backend.onrender.com/api/contacto',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -29,7 +32,14 @@ export const Contacto = () => {
       })
 
       const data = await res.json();
-      alert(data.message)
+
+      if(res.ok) {
+        console.log(data.message)
+        navigate('/gracias')
+      } else {
+        alert('Hubo un problema al enviar el formulario')
+      }
+
 
     } catch (err) {
       alert('Hubo un error en el formulario')
@@ -40,13 +50,13 @@ export const Contacto = () => {
 
 
     return (
-      <section id="contacto" className="px-6 md:px-16 py-20 bg-white mt-14">
+      <section id="contacto" className="px-6 md:px-16 py-20 bg-white mt-16">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           {/* Texto + formulario */}
           <div>
             <h2 className="font-serif text-3xl text-[#003c58] mb-4">Contacto</h2>
             <p className="font-sans text-gray-700 mb-6">
-              Estamos para escucharte. Podés escribirnos para agendar una cita o consultar cualquier duda.
+              Estamos para escucharte. Puedes escribirnos para agendar una cita o consultar cualquier duda.
             </p>
 
             <form
@@ -80,12 +90,8 @@ export const Contacto = () => {
                 ></textarea>
               </div>
               <button
-                
-                onClick={ () => {
-                  console.log(formState)
-                } }
                 type="submit"
-                className="bg-[#6CA6A0] text-white px-6 py-2 rounded-xl hover:bg-[#5e9c97] transition"
+                className="bg-[#6CA6A0] text-white px-6 py-2 rounded-xl hover:bg-[#5e9c97] transition cursor-pointer"
               >
                 Enviar mensaje
               </button>
@@ -106,7 +112,7 @@ export const Contacto = () => {
           <div className="rounded-xl overflow-hidden shadow-md h-80">
             <iframe
               title="Ubicación"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15605.956830309198!2d-77.04971305!3d-12.07862505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8e3646ab8d7%3A0x848660d2fc40ce50!2zSmVzw7pzIE1hcsOtYSwgUGVyw7o!5e0!3m2!1ses!2spt!4v1746170596800!5m2!1ses!2spt"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3901.572695050532!2d-77.0526508!3d-12.0728942!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8e485bceb89%3A0x288a000c0643780f!2sAv.%20Gral.%20Eugenio%20Garz%C3%B3n%201283%2C%20lima%2002002%2C%20Per%C3%BA!5e0!3m2!1ses!2spt!4v1747054306404!5m2!1ses!2spt%22%20"
               width="100%"
               height="100%"
               style={{ border: 0 }}

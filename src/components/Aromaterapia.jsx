@@ -38,7 +38,7 @@ export const Aromaterapia = () => {
 
 
     return (
-      <section className="bg-[#FAFAFA] py-16 px-8 mt-14">
+      <section className="bg-[#FAFAFA] py-16 px-8 mt-16">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-serif mb-4 text-[#1E293B]">
             Aromaterapia que acompaña tu bienestar

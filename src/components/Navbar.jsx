@@ -49,8 +49,8 @@ export const Navbar = () => {
         <nav className="px-6 md:px-16 py-4 flex justify-between items-center">
           {/* Logo o nombre */}
           <Link to='/' className="flex items-center">
-            <img src="../../assets/react.svg" alt=""  className="mr-2" />
-            <h1 className="font-serif text-2xl text-[#003c58]">Centro Terapeutico</h1>
+            <img src="https://azlmyzhfvhsvsbdxarvt.supabase.co/storage/v1/object/public/productos.img//logo-kusikuy.svg" alt=""  className="w-15 h-auto mr-2" />
+            <h1 className="font-serif text-xl text-[#003c58] text-center">Centro Terapéutico<br />Kusikuy Yachay</h1>
           </Link>
 
           {/* Menú */}

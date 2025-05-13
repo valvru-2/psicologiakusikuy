@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { Link } from "react-router"
 import { BotonAgendar } from "./BotonAgendar";
+import { Link } from "react-router";
 
 
 export const HeroSection = () => {
@@ -14,7 +14,7 @@ export const HeroSection = () => {
 
   return (
     <>
-      <div className="bg-[#FAFAFA] text-[#1E293B] mt-14">
+      <div className="bg-[#FAFAFA] text-[#1E293B] mt-18">
       {/* HERO */}
       <section
         className="relative px-6 md:px-16 py-20 text-center overflow-hidden h-120"
@@ -45,9 +45,11 @@ export const HeroSection = () => {
           </p>
           <div className="flex justify-center gap-4 mt-6">
             <BotonAgendar />
-            <button className="bg-white text-[#6CA6A0] border border-[#6CA6A0] font-medium px-6 py-2 rounded-xl hover:bg-[#f5fdfc] transition">
-              Conocer más
-            </button>
+            <Link to='/psicoterapia'>
+              <button className="bg-white text-[#6CA6A0] border border-[#6CA6A0] font-medium px-6 py-2 rounded-xl hover:bg-[#f5fdfc] transition cursor-pointer">
+                Conocer más
+              </button>
+            </Link>
           </div>
         </div>
       </section>

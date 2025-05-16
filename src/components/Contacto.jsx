@@ -23,6 +23,7 @@ export const Contacto = () => {
       const value = formState[key];
       if (!value || value.trim().length < 3) {
         alert(`El campo "${key}" está vacío o es muy corto.`);
+        setIsSubmitting(false)
         return false;
       }
     }

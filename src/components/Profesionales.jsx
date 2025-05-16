@@ -1,17 +1,17 @@
 const team = [
   {
-    name: "Lic. Raquel Ruiz",
+    name: "Psic. Raquel Ruiz",
     role: "Psicóloga – Fundadora",
     image: "https://azlmyzhfvhsvsbdxarvt.supabase.co/storage/v1/object/public/productos.img//mama-web.jpg",
     bio: "Mi compromiso es ofrecer un espacio seguro, humano y respetuoso, donde cada historia pueda ser reconocida y trabajada con cuidado.",
     values: ["Empatía", "Respeto", "Escucha activa", "Acompañamiento personalizado"],
   },
-  // {
-  //   name: "Marina Torres",
-  //   role: "Terapeuta ocupacional",
-  //   image: "/images/marina.jpg",
-  //   specialty: "Estimulación cognitiva y acompañamiento en la vida cotidiana",
-  // },
+  {
+    name: "Psic. Jonathan Aldazabal Tarrillo",
+    role: "Psicólogo",
+    image: "https://azlmyzhfvhsvsbdxarvt.supabase.co/storage/v1/object/public/productos.img//psicologo_aldazaval.jpg",
+    specialty: "Psicoterapia, evaluación y consejería para niños, adolescentes y adultos, en contextos clínicos y educativos.",
+  },
   // {
   //   name: "Tomás Herrera",
   //   role: "Especialista en aromaterapia",

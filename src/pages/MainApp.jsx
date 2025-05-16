@@ -25,10 +25,11 @@ export const MainApp = () => {
         <Route path="/aromaterapia" element={ <Aromaterapia /> } ></Route>
         <Route path="/testimonios" element={ <Testimonios /> } ></Route>
         <Route path="/contacto" element={ <Contacto /> } ></Route>
+        <Route path="/gracias" element={ <Gracias /> } ></Route>
+        {/* Tienda */}
         <Route path="/tienda" element={ <Tienda /> } ></Route>
         <Route path="/tienda/productos/:id" element={ <ProductoDetalle /> } ></Route>
         <Route path="/tienda/checkout" element={ <Checkout /> } ></Route>
-        <Route path="/gracias" element={ <Gracias /> } ></Route>
       </Routes>
       
       {isTiendaRoute?  <FooterTienda /> : <Footer /> }      
